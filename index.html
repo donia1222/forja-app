@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eigene App für Ihr Geschäft – iPhone &amp; Android | Lweb</title>
+<meta name="description" content="Lweb baut Ihre eigene App für iPhone und Android – mit unserem App-Baukasten Forja. Live-Vorschau auf Ihrem Handy, Fixpreis in CHF, persönlich betreut aus Sevelen SG.">
+<meta property="og:title" content="Ihre eigene App – iPhone &amp; Android | Lweb">
+<meta property="og:description" content="Buchungen, Speisekarte, Treuekarte, Push-Nachrichten: Ihre App, gebaut mit Forja. Fixpreis, Live-Vorschau, aus der Schweiz.">
+<meta property="og:image" content="img/screens/sections.webp">
+<meta name="theme-color" content="#0e0d1c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e3262f'/%3E%3Cpath d='M13 7h6v6h6v6h-6v6h-6v-6H7v-6h6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=202611021">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Lweb","url":"https://lweb.ch","email":"info@lweb.ch","telephone":"+41793749032","address":{"@type":"PostalAddress","postalCode":"9475","addressLocality":"Sevelen","addressCountry":"CH"},"areaServed":["CH","LI"],"description":"Native Apps für iPhone und Android für KMU in der Schweiz und in Liechtenstein."}
+</script>
+</head>
+<body>
+
+<!-- ============ ICON SPRITE (lucide-style) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="fsh" x="-20%" y="-20%" width="140%" height="170%"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#2a1e7a" flood-opacity=".13"/></filter>
+    <linearGradient id="fgr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#4a32e0"/></linearGradient>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></symbol>
+    <symbol id="i-utensils" viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></symbol>
+    <symbol id="i-stamp" viewBox="0 0 24 24"><path d="M5 22h14M19.27 13.73A2.5 2.5 0 0 0 17.5 13h-11A2.5 2.5 0 0 0 4 15.5V17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-1.5c0-.66-.26-1.3-.73-1.77zM14 13V8.5C14 7 15 7 15 5a3 3 0 0 0-6 0c0 2 1 2 1 3.5V13"/></symbol>
+    <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/><path d="M13 5v2M13 17v2M13 11v2"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3M21 14v.01M14 21h3M21 18v3"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2M15 18H9M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m10 9 5 3-5 3z"/></symbol>
+    <symbol id="i-poll" viewBox="0 0 24 24"><path d="M3 3v18h18M7 16v-4M12 16V8M17 16v-7"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.65-.75 1.65-1.69 0-.44-.18-.84-.44-1.13-.29-.29-.44-.65-.44-1.13a1.64 1.64 0 0 1 1.67-1.67h2c3.05 0 5.56-2.5 5.56-5.55C21.97 6.01 17.46 2 12 2"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.94 14.06 8 20l-1.94-5.94L0 12l6.06-1.94L8 4l1.94 6.06L16 12z" transform="translate(2 -1) scale(.9)"/><path d="M19 3v4M17 5h4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3M3 4h8"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-call" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92"/></symbol>
+    <symbol id="i-zoom" viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></symbol>
+    <symbol id="i-apple" viewBox="0 0 24 24"><path d="M12 7c1-2 3-3 4.5-3-.1 1.6-.8 3-2.3 3.8M16.6 12.8c0 2.4 2.1 3.2 2.2 3.2-.2.6-.6 1.6-1.2 2.5-.9 1.3-1.8 2.5-3.2 2.5s-1.8-.8-3.4-.8-2.1.8-3.4.8-2.3-1.3-3.2-2.6C2.6 15.7 2 12 4.6 9.9c1.1-.9 2.6-1.1 3.5-1.1 1.3 0 2.5.9 3.3.9s2.3-1.1 3.9-.9c.7 0 2.6.3 3.8 2-.1.1-2.5 1.4-2.5 4z"/></symbol>
+    <symbol id="i-android" viewBox="0 0 24 24"><path d="M5 16V11a7 7 0 0 1 14 0v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1zM7 5 5.5 3M17 5l1.5-2M9 10h.01M15 10h.01M8 17v3M16 17v3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-swiss" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="#e3262f" stroke="none"/><path d="M10 6h4v4h4v4h-4v4h-4v-4H6v-4h4z" fill="#fff" stroke="none"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr" id="top">
+  <div class="wrap hdr__in">
+    <a href="#top" class="brand" aria-label="Lweb – zur Startseite">
+      <span class="brand__word">Lweb</span><svg class="brand__cross"><use href="#i-swiss"/></svg>
+      <span class="brand__tag">Apps</span>
+    </a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#ablauf">So funktioniert’s</a>
+      <a href="#funktionen">Funktionen</a>
+      <a href="#branchen">Beispiele</a>
+      <a href="#preise">Preise</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="hdr__cta">
+      <a href="tel:+41793749032" class="btn btn--ghost btn--sm hide-sm"><svg class="ic"><use href="#i-call"/></svg>079 374 90 32</a>
+      <a href="#kontakt" class="btn btn--primary btn--sm">Gratis-Demo</a>
+      <button class="burger" aria-label="Menü öffnen" aria-expanded="false"><svg class="ic"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <div class="mnav" hidden>
+    <a href="#ablauf">So funktioniert’s</a>
+    <a href="#funktionen">Funktionen</a>
+    <a href="#branchen">Beispiele</a>
+    <a href="#preise">Preise</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt" class="btn btn--primary">Gratis-Demo vereinbaren</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <span class="pill reveal"><span class="dot"></span>Neu: Apps für KMU in der Schweiz &amp; Liechtenstein</span>
+      <h1 class="reveal">Ihre eigene App.<br><em>Auf jedem Handy</em> Ihrer Kunden.</h1>
+      <p class="lead reveal">Lweb baut Ihre App für iPhone und Android – mit unserem App-Baukasten <strong>Forja</strong>. Sie sehen jeden Schritt live auf Ihrem eigenen Handy, zahlen einen Fixpreis in CHF und haben einen persönlichen Ansprechpartner aus der Region.</p>
+      <div class="hero__ctas reveal">
+        <a href="#kontakt" class="btn btn--primary btn--lg">Kostenlose Demo vereinbaren <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a href="#ablauf" class="btn btn--ghost btn--lg">So funktioniert’s</a>
+      </div>
+      <ul class="hero__facts reveal">
+        <li><svg class="ic"><use href="#i-apple"/></svg>iPhone</li>
+        <li><svg class="ic"><use href="#i-android"/></svg>Android</li>
+        <li><svg class="ic"><use href="#i-eye"/></svg>Live-Vorschau</li>
+        <li><svg class="ic"><use href="#i-wallet"/></svg>Fixpreis CHF</li>
+      </ul>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__halo"></div>
+      <div class="dev dev--back"><div class="float-alt"><div class="dev__body"><img src="img/phones/screen-gym.webp" alt="" width="900" height="1951"></div></div></div>
+      <div class="dev dev--front"><div class="float"><div class="dev__body"><img src="img/phones/screen-beauty.webp" alt="" width="900" height="1951" fetchpriority="high"></div></div></div>
+      <div class="chip chip--a float-alt"><span class="chip__ic chip__ic--green"><svg class="ic"><use href="#i-calendar"/></svg></span><div><b>Neuer Termin</b><small>Balayage · Sa 10:30</small></div></div>
+      <div class="chip chip--b float"><span class="chip__ic chip__ic--violet"><svg class="ic"><use href="#i-bell"/></svg></span><div><b>Push gesendet</b><small>an 1’240 Kundinnen</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-label="Branchen">
+  <div class="marquee__track">
+    <span>Restaurants</span><span>Coiffeure</span><span>Fitnessstudios</span><span>Hotels</span><span>Modegeschäfte</span><span>Vereine</span><span>Festivals</span><span>Akademien</span><span>Praxen</span><span>Handwerk</span><span>Hofläden</span><span>Cafés</span>
+    <span>Restaurants</span><span>Coiffeure</span><span>Fitnessstudios</span><span>Hotels</span><span>Modegeschäfte</span><span>Vereine</span><span>Festivals</span><span>Akademien</span><span>Praxen</span><span>Handwerk</span><span>Hofläden</span><span>Cafés</span>
+  </div>
+</div>
+
+<!-- ============ WARUM ============ -->
+<section class="sec" id="warum">
+  <div class="wrap why">
+    <div class="why__media reveal">
+      <img src="img/photos/laden-kunde.webp" alt="Kundin bezahlt im Laden mit dem Smartphone" loading="lazy" width="1600" height="1067">
+      <div class="why__badge"><svg class="ic"><use href="#i-phone"/></svg><div><b>Ø 3–4 Std.</b><small>verbringen Menschen täglich am Handy</small></div></div>
+    </div>
+    <div class="why__copy">
+      <span class="eyebrow reveal">Warum eine eigene App?</span>
+      <h2 class="reveal">Eine Website wird gesucht.<br><em>Eine App bleibt.</em></h2>
+      <p class="reveal">Ihr Icon liegt auf dem Startbildschirm Ihrer Stammkunden – direkt neben WhatsApp und Instagram. Ein Fingertipp, und sie buchen, bestellen oder sammeln Stempel. Ohne Suchmaschine, ohne Umweg.</p>
+      <div class="why__list">
+        <div class="why__item reveal"><span class="ibox"><svg class="ic"><use href="#i-bell"/></svg></span><div><h3>Push-Nachrichten</h3><p>Aktionen, freie Termine oder das Tagesmenü direkt aufs Handy – ohne Werbebudget.</p></div></div>
+        <div class="why__item reveal"><span class="ibox"><svg class="ic"><use href="#i-stamp"/></svg></span><div><h3>Kundenbindung</h3><p>Digitale Stempelkarte und QR-Gutscheine statt Kartonkärtchen, die im Portemonnaie verschwinden.</p></div></div>
+        <div class="why__item reveal"><span class="ibox"><svg class="ic"><use href="#i-calendar"/></svg></span><div><h3>Buchen rund um die Uhr</h3><p>Termine, Tische und Kurse – auch wenn bei Ihnen längst Feierabend ist.</p></div></div>
+        <div class="why__item reveal"><span class="ibox"><svg class="ic"><use href="#i-shield"/></svg></span><div><h3>Ihr eigener Kanal</h3><p>Keine Algorithmen, keine Provisionen an Plattformen. Ihre Kunden, Ihre Daten, Ihre Marke.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABLAUF (interaktiv) ============ -->
+<section class="sec sec--tint" id="ablauf">
+  <div class="wrap">
+    <div class="sec__head center">
+      <span class="eyebrow reveal">So funktioniert’s</span>
+      <h2 class="reveal">Von der Idee zur App –<br><em>und Sie sehen jeden Schritt.</em></h2>
+      <p class="reveal">Wir bauen Ihre App gemeinsam mit Ihnen in Forja, unserem eigenen App-Baukasten. Das sind echte Bildschirme aus dem Programm.</p>
+    </div>
+
+    <div class="steps reveal" data-steps>
+      <div class="steps__tabs" role="tablist">
+        <button class="step is-on" role="tab" aria-selected="true" data-i="0">
+          <span class="step__n">01</span><span class="step__t"><b>Vorlage wählen</b><small>Branche aussuchen – Bereiche, Design und Beispielinhalte sind schon da.</small></span><span class="step__bar"><i></i></span>
+        </button>
+        <button class="step" role="tab" aria-selected="false" data-i="1">
+          <span class="step__n">02</span><span class="step__t"><b>Inhalte einfüllen</b><small>Speisekarte, Leistungen, Preise, Fotos – Bereich für Bereich.</small></span><span class="step__bar"><i></i></span>
+        </button>
+        <button class="step" role="tab" aria-selected="false" data-i="2">
+          <span class="step__n">03</span><span class="step__t"><b>Funktionen ergänzen</b><small>Buchungen, Shop, Treuekarte, Chat: über 20 Bausteine stehen bereit.</small></span><span class="step__bar"><i></i></span>
+        </button>
+        <button class="step" role="tab" aria-selected="false" data-i="3">
+          <span class="step__n">04</span><span class="step__t"><b>Design anpassen</b><small>Ihre Farben, Ihr Logo, Ihre Schrift – die Vorschau ändert sich sofort.</small></span><span class="step__bar"><i></i></span>
+        </button>
+        <button class="step" role="tab" aria-selected="false" data-i="4">
+          <span class="step__n">05</span><span class="step__t"><b>Testen &amp; veröffentlichen</b><small>QR-Code scannen, auf dem eigenen Handy testen – dann ab in die Stores.</small></span><span class="step__bar"><i></i></span>
+        </button>
+      </div>
+      <div class="steps__stage">
+        <div class="browser">
+          <div class="browser__bar"><i></i><i></i><i></i><span data-step-title>Forja · Neue App</span>
+            <button class="browser__zoom" data-zoom aria-label="Bild vergrössern"><svg class="ic"><use href="#i-zoom"/></svg></button></div>
+          <div class="steps__imgs">
+            <img src="img/screens/templates.webp" alt="Forja: Vorlage für die neue App auswählen" class="is-on" width="1800" height="1125" data-title="Forja · Neue App">
+            <img src="img/screens/section-edit.webp" alt="Forja: Speisekarte mit Produkten bearbeiten" loading="lazy" width="1800" height="1125" data-title="Forja · Trattoria Alpina · Speisekarte">
+            <img src="img/screens/add.webp" alt="Forja: Neuen Bereich zur App hinzufügen" loading="lazy" width="1800" height="1125" data-title="Forja · Bereich hinzufügen">
+            <img src="img/screens/design.webp" alt="Forja: Farben, Themes und Schriften anpassen" loading="lazy" width="1800" height="1125" data-title="Forja · Salon Lumière · Design">
+            <img src="img/screens/publish.webp" alt="Forja: App veröffentlichen und testen" loading="lazy" width="1800" height="1125" data-title="Forja · Veröffentlichen">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FUNKTIONEN ============ -->
+<section class="sec" id="funktionen">
+  <div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow reveal">Funktionen</span>
+      <h2 class="reveal">Alles, was Ihr Geschäft braucht.<br><em>Nichts, was Sie nicht brauchen.</em></h2>
+      <p class="reveal">Über 20 fertige Bausteine – kombiniert zu genau der App, die zu Ihrem Betrieb passt.</p>
+    </div>
+    <div class="feat" data-feat tabindex="0" aria-label="Funktionen">
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><rect class="w" filter="url(#fsh)" x="40" y="18" width="162" height="110" rx="14"/><rect class="os" x="52" y="30" width="24" height="24" rx="7"/><circle class="o" cx="64" cy="42" r="6.5"/><rect class="l2" x="84" y="34" width="64" height="6" rx="3"/><rect class="l" x="84" y="45" width="40" height="5" rx="2.5"/><text class="tx" x="190" y="45" text-anchor="end" style="font-size:10px">18.50</text><rect class="gs" x="52" y="62" width="24" height="24" rx="7"/><circle class="g" cx="64" cy="74" r="6.5"/><rect class="l2" x="84" y="66" width="52" height="6" rx="3"/><rect class="l" x="84" y="77" width="46" height="5" rx="2.5"/><text class="tx" x="190" y="77" text-anchor="end" style="font-size:10px">24.00</text><rect class="t" x="52" y="94" width="24" height="24" rx="7"/><circle class="b2" cx="64" cy="106" r="6.5"/><rect class="l2" x="84" y="98" width="60" height="6" rx="3"/><rect class="l" x="84" y="109" width="34" height="5" rx="2.5"/><text class="tx" x="190" y="109" text-anchor="end" style="font-size:10px">12.90</text><rect class="r" x="160" y="8" width="52" height="20" rx="10"/><text class="txw" x="186" y="22" text-anchor="middle" style="font-size:10px">-20 %</text></svg></div><h3>Speisekarte &amp; Katalog</h3><p>Produkte mit Fotos, Preisen, Kategorien und Badges wie «Vegetarisch» oder «-20 %».</p></article>
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><rect class="w" filter="url(#fsh)" x="30" y="14" width="180" height="116" rx="14"/><text class="tx" x="44" y="34" style="font-size:11px">November</text><path class="skm" d="M178 27l-4 4 4 4M190 27l4 4-4 4"/><text class="txm" x="50" y="54" text-anchor="middle" style="font-size:9px">10</text><text class="txm" x="73" y="54" text-anchor="middle" style="font-size:9px">11</text><text class="txm" x="96" y="54" text-anchor="middle" style="font-size:9px">12</text><text class="txm" x="119" y="54" text-anchor="middle" style="font-size:9px">13</text><text class="txm" x="142" y="54" text-anchor="middle" style="font-size:9px">14</text><circle class="b" cx="165" cy="50.5" r="9.5"/><text class="txw" x="165" y="54" text-anchor="middle" style="font-size:9px">15</text><text class="txl" x="188" y="54" text-anchor="middle" style="font-size:9px">16</text><text class="txm" x="50" y="76" text-anchor="middle" style="font-size:9px">17</text><text class="txm" x="73" y="76" text-anchor="middle" style="font-size:9px">18</text><text class="txm" x="96" y="76" text-anchor="middle" style="font-size:9px">19</text><text class="txm" x="119" y="76" text-anchor="middle" style="font-size:9px">20</text><text class="txm" x="142" y="76" text-anchor="middle" style="font-size:9px">21</text><text class="txl" x="165" y="76" text-anchor="middle" style="font-size:9px">22</text><text class="txl" x="188" y="76" text-anchor="middle" style="font-size:9px">23</text><rect class="l3" x="46" y="98" width="46" height="20" rx="10"/><text class="tx" x="69" y="111.5" text-anchor="middle" style="font-size:9px">09:00</text><rect class="b" x="98" y="98" width="46" height="20" rx="10"/><text class="txw" x="121" y="111.5" text-anchor="middle" style="font-size:9px">10:30</text><rect class="l3" x="150" y="98" width="46" height="20" rx="10"/><text class="tx" x="173" y="111.5" text-anchor="middle" style="font-size:9px">14:15</text></svg></div><h3>Termine &amp; Buchungen</h3><p>Leistung, Tag und Uhrzeit wählen – ideal für Coiffeure, Praxen und Studios.</p></article>
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><rect class="w" filter="url(#fsh)" x="26" y="14" width="104" height="116" rx="14"/><rect class="t" x="34" y="22" width="88" height="58" rx="9"/><path class="b2" d="M62 46h32l-3 24H65z"/><path class="sk" d="M70 46v-4a8 8 0 0 1 16 0v4"/><rect class="l2" x="36" y="90" width="56" height="6" rx="3"/><text class="tx" x="36" y="116" style="font-size:10px">CHF 89.–</text><circle class="b" cx="112" cy="112" r="10"/><path class="skw" d="M112 107v10M107 112h10"/><circle class="w" filter="url(#fsh)" cx="178" cy="68" r="32"/><path class="sk" d="M160 56h5l5 22h18l4-15h-24"/><circle class="b" cx="172" cy="84" r="2.6"/><circle class="b" cx="186" cy="84" r="2.6"/><circle class="r" cx="200" cy="44" r="10"/><text class="txw" x="200" y="48" text-anchor="middle" style="font-size:11px">2</text></svg></div><h3>Shop mit Warenkorb</h3><p>Bestellungen per WhatsApp oder E-Mail – ohne komplizierte Shop-Software.</p></article>
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><rect class="w" filter="url(#fsh)" x="20" y="12" width="200" height="82" rx="14"/><path class="skd" d="M46 74C80 76 84 34 120 44S168 28 194 34"/><circle class="b" cx="46" cy="74" r="8"/><circle class="w" cx="46" cy="74" r="3"/><circle class="g" cx="194" cy="34" r="9"/><path class="skw" d="M190 35l4-4 4 4M191 34v4h6v-4"/><circle class="w" filter="url(#fsh)" cx="122" cy="44" r="11"/><circle class="o" cx="122" cy="44" r="6"/><path class="l2s" d="M60 112h120"/><path class="bs" d="M60 112h60"/><circle class="b" cx="60" cy="112" r="6"/><circle class="b" cx="120" cy="112" r="6"/><circle class="l2" cx="180" cy="112" r="6"/><text class="txm" x="60" y="132" text-anchor="middle" style="font-size:8.5px">Bestellt</text><text class="txb" x="120" y="132" text-anchor="middle" style="font-size:8.5px;font-weight:700">Unterwegs</text><text class="txm" x="180" y="132" text-anchor="middle" style="font-size:8.5px">Geliefert</text></svg></div><h3>Lieferservice</h3><p>Warenkorb, Lieferadresse und Status-Tracking für Pizzerien und Take-aways.</p></article>
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><rect fill="url(#fgr)" filter="url(#fsh)" x="28" y="16" width="184" height="108" rx="16"/><text class="txw" x="44" y="38" style="font-size:11px">Treuekarte</text><text class="txw7" x="196" y="38" text-anchor="end" style="font-size:10px">5 / 8</text><circle class="w" cx="60" cy="66" r="12"/><path class="sk" d="M55 66l3.5 3.5L65.5 62"/><circle class="w" cx="100" cy="66" r="12"/><path class="sk" d="M95 66l3.5 3.5L105.5 62"/><circle class="w" cx="140" cy="66" r="12"/><path class="sk" d="M135 66l3.5 3.5L145.5 62"/><circle class="w" cx="180" cy="66" r="12"/><path class="sk" d="M175 66l3.5 3.5L185.5 62"/><circle class="w" cx="60" cy="100" r="12"/><path class="sk" d="M55 100l3.5 3.5L65.5 96"/><circle class="dsw" cx="100" cy="100" r="11.5"/><circle class="dsw" cx="140" cy="100" r="11.5"/><circle class="w2" cx="180" cy="100" r="12"/><rect class="skw" x="174" y="97" width="12" height="9" rx="1.5"/><path class="skw" d="M173 97h14M180 97v9M180 97c-2-5-7-4-5-1M180 97c2-5 7-4 5-1"/></svg></div><h3>Digitale Treuekarte</h3><p>Stempel sammeln, Ihr Team bestätigt per PIN. Belohnung inklusive.</p></article>
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><rect class="w" filter="url(#fsh)" x="22" y="24" width="196" height="92" rx="14"/><circle class="bgc" cx="146" cy="24" r="9"/><circle class="bgc" cx="146" cy="116" r="9"/><path class="skd2" d="M146 38v64"/><text class="txb" x="38" y="64" style="font-size:26px;font-weight:800">-10 %</text><text class="txm" x="38" y="84" style="font-size:9.5px">Gutschein · Laden</text><rect class="gs" x="38" y="92" width="62" height="14" rx="7"/><text class="txg" x="69" y="102" text-anchor="middle" style="font-size:7.5px;font-weight:700">gültig bis 31.12.</text><rect class="k" x="170" y="46" width="4" height="4"/><rect class="k" x="174" y="46" width="4" height="4"/><rect class="k" x="182" y="46" width="4" height="4"/><rect class="k" x="170" y="50" width="4" height="4"/><rect class="k" x="174" y="50" width="4" height="4"/><rect class="k" x="182" y="50" width="4" height="4"/><rect class="k" x="186" y="50" width="4" height="4"/><rect class="k" x="170" y="54" width="4" height="4"/><rect class="k" x="174" y="54" width="4" height="4"/><rect class="k" x="178" y="54" width="4" height="4"/><rect class="k" x="186" y="54" width="4" height="4"/><rect class="k" x="158" y="58" width="4" height="4"/><rect class="k" x="174" y="58" width="4" height="4"/><rect class="k" x="182" y="58" width="4" height="4"/><rect class="k" x="190" y="58" width="4" height="4"/><rect class="k" x="194" y="58" width="4" height="4"/><rect class="k" x="198" y="58" width="4" height="4"/><rect class="k" x="158" y="62" width="4" height="4"/><rect class="k" x="166" y="62" width="4" height="4"/><rect class="k" x="178" y="62" width="4" height="4"/><rect class="k" x="186" y="62" width="4" height="4"/><rect class="k" x="190" y="62" width="4" height="4"/><rect class="k" x="194" y="62" width="4" height="4"/><rect class="k" x="158" y="66" width="4" height="4"/><rect class="k" x="162" y="66" width="4" height="4"/><rect class="k" x="170" y="66" width="4" height="4"/><rect class="k" x="174" y="66" width="4" height="4"/><rect class="k" x="186" y="66" width="4" height="4"/><rect class="k" x="162" y="70" width="4" height="4"/><rect class="k" x="170" y="70" width="4" height="4"/><rect class="k" x="174" y="70" width="4" height="4"/><rect class="k" x="182" y="70" width="4" height="4"/><rect class="k" x="186" y="70" width="4" height="4"/><rect class="k" x="190" y="70" width="4" height="4"/><rect class="k" x="166" y="74" width="4" height="4"/><rect class="k" x="182" y="74" width="4" height="4"/><rect class="k" x="194" y="74" width="4" height="4"/><rect class="k" x="170" y="78" width="4" height="4"/><rect class="k" x="190" y="78" width="4" height="4"/><rect class="k" x="194" y="78" width="4" height="4"/><rect class="k" x="170" y="82" width="4" height="4"/><rect class="k" x="174" y="82" width="4" height="4"/><rect class="k" x="178" y="82" width="4" height="4"/><rect class="k" x="182" y="82" width="4" height="4"/><rect class="k" x="186" y="82" width="4" height="4"/><rect class="k" x="194" y="82" width="4" height="4"/><rect class="k" x="198" y="82" width="4" height="4"/><rect class="k" x="170" y="86" width="4" height="4"/><rect class="k" x="178" y="86" width="4" height="4"/><rect class="k" x="182" y="86" width="4" height="4"/><rect class="k" x="158" y="46" width="12" height="12" rx="2"/><rect class="w" x="160.5" y="48.5" width="7" height="7" rx="1"/><rect class="k" x="162.5" y="50.5" width="3" height="3"/><rect class="k" x="190" y="46" width="12" height="12" rx="2"/><rect class="w" x="192.5" y="48.5" width="7" height="7" rx="1"/><rect class="k" x="194.5" y="50.5" width="3" height="3"/><rect class="k" x="158" y="78" width="12" height="12" rx="2"/><rect class="w" x="160.5" y="80.5" width="7" height="7" rx="1"/><rect class="k" x="162.5" y="82.5" width="3" height="3"/></svg></div><h3>QR-Gutscheine</h3><p>Rabatte, die im Laden mit einem QR-Code eingelöst werden.</p></article>
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><rect class="l" x="46" y="104" width="148" height="12" rx="6"/><rect class="l3" x="36" y="96" width="168" height="14" rx="7"/><rect class="w" filter="url(#fsh)" x="22" y="28" width="196" height="74" rx="16"/><rect fill="url(#fgr)" x="34" y="42" width="26" height="26" rx="7"/><path class="skw" d="M41 52a6 6 0 0 1 12 0v5l2 3H39l2-3zM45 63h4"/><text class="tx" x="70" y="52" style="font-size:10px">Trattoria Alpina</text><text class="txm" x="206" y="52" text-anchor="end" style="font-size:8.5px">jetzt</text><text class="txm" x="70" y="68" style="font-size:9px">Heute Abend: Risotto-Spezial</text><text class="txm" x="70" y="82" style="font-size:9px">für App-Kunden -15 %</text><circle class="r" cx="196" cy="22" r="10"/><text class="txw" x="196" y="26" text-anchor="middle" style="font-size:10px">1</text></svg></div><h3>Push-Nachrichten</h3><p>Direkt auf den Sperrbildschirm Ihrer Kunden – mit Link in die App.</p></article>
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><text class="tx" x="30" y="30" style="font-size:11px">Seenacht Festival</text><text class="txm" x="210" y="30" text-anchor="end" style="font-size:9px">startet in</text><rect class="b" filter="url(#fsh)" x="30" y="42" width="40" height="52" rx="11"/><text class="txw" x="50" y="75" text-anchor="middle" style="font-size:19px;font-weight:800">08</text><text class="txm" x="50" y="110" text-anchor="middle" style="font-size:8px;font-weight:700">TAGE</text><rect class="k" filter="url(#fsh)" x="76" y="42" width="40" height="52" rx="11"/><text class="txw" x="96" y="75" text-anchor="middle" style="font-size:19px;font-weight:800">19</text><text class="txm" x="96" y="110" text-anchor="middle" style="font-size:8px;font-weight:700">STD</text><rect class="k" filter="url(#fsh)" x="122" y="42" width="40" height="52" rx="11"/><text class="txw" x="142" y="75" text-anchor="middle" style="font-size:19px;font-weight:800">03</text><text class="txm" x="142" y="110" text-anchor="middle" style="font-size:8px;font-weight:700">MIN</text><rect class="k" filter="url(#fsh)" x="168" y="42" width="40" height="52" rx="11"/><text class="txw" x="188" y="75" text-anchor="middle" style="font-size:19px;font-weight:800">26</text><text class="txm" x="188" y="110" text-anchor="middle" style="font-size:8px;font-weight:700">SEK</text><rect class="l" x="30" y="120" width="180" height="5" rx="2.5"/><rect class="b2" x="30" y="120" width="128" height="5" rx="2.5"/></svg></div><h3>Events &amp; Countdown</h3><p>Agenda, Line-up, Tickets und ein Countdown bis zum grossen Tag.</p></article>
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><path class="w" filter="url(#fsh)" d="M38 18h108a12 12 0 0 1 12 12v12a12 12 0 0 1-12 12H40l-10 6 2-10a12 12 0 0 1-6-8V30a12 12 0 0 1 12-12z"/><text class="tx" x="38" y="40" style="font-size:9.5px">Offerte für 40 Personen?</text><path class="b" d="M94 62h110a12 12 0 0 1 12 12v12a12 12 0 0 1-6 10l2 10-10-6H94a12 12 0 0 1-12-12V74a12 12 0 0 1 12-12z"/><text class="txw" x="94" y="84" style="font-size:9.5px">Gerne – kommt in 1 Std.</text><rect class="w" filter="url(#fsh)" x="26" y="102" width="52" height="24" rx="12"/><circle class="l2 dot1" cx="40" cy="114" r="3.5"/><circle class="l2 dot2" cx="52" cy="114" r="3.5"/><circle class="l2 dot3" cx="64" cy="114" r="3.5"/></svg></div><h3>Chat &amp; Formulare</h3><p>Offertanfragen, Anmeldungen, Live-Chat – alles landet gesammelt bei Ihnen.</p></article>
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><rect class="ms" filter="url(#fsh)" x="20" y="12" width="200" height="116" rx="14"/><clipPath id="fmapc"><rect x="20" y="12" width="200" height="116" rx="14"/></clipPath><g clip-path="url(#fmapc)"><path class="road" d="M20 62h200M96 12v116M150 12l70 70"/><path class="road2" d="M20 100h76M160 12v50"/></g><rect class="mp" x="104" y="70" width="40" height="26" rx="4"/><rect class="mp" x="30" y="20" width="56" height="32" rx="4"/><ellipse class="shd" cx="128" cy="62" rx="9" ry="3"/><path class="b" d="M128 62c-10-11-15-18-15-25a15 15 0 0 1 30 0c0 7-5 14-15 25z"/><circle class="w" cx="128" cy="37" r="5.5"/><rect class="w" filter="url(#fsh)" x="30" y="100" width="100" height="20" rx="10"/><circle class="g" cx="43" cy="110" r="4"/><text class="txg" x="52" y="113.5" style="font-size:9px;font-weight:700">Jetzt geöffnet</text></svg></div><h3>Karte &amp; Filialfinder</h3><p>Standorte, «jetzt geöffnet» und Route per Fingertipp.</p></article>
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><circle class="t" cx="120" cy="30" r="17"/><circle class="b2" cx="120" cy="25" r="6"/><path class="b2" d="M108 41a12 9 0 0 1 24 0z"/><rect class="k" x="48" y="56" width="144" height="22" rx="11"/><text class="txw" x="120" y="70.5" text-anchor="middle" style="font-size:9.5px">Mit Apple anmelden</text><rect class="w" filter="url(#fsh)" x="48" y="84" width="144" height="22" rx="11"/><text class="tx" x="120" y="98.5" text-anchor="middle" style="font-size:9.5px">Mit Google anmelden</text><rect class="t" x="48" y="112" width="144" height="22" rx="11"/><text class="txb" x="120" y="126.5" text-anchor="middle" style="font-size:9.5px">Mit E-Mail anmelden</text></svg></div><h3>Kundenkonten</h3><p>Login mit E-Mail, Apple oder Google, Favoriten und exklusive Bereiche.</p></article>
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><rect class="b"  x="30" y="24" width="86" height="28" rx="14"/><text class="txw" x="67" y="42" text-anchor="middle" style="font-size:10px">Deutsch</text><path class="skw" d="M98 38l3 3 6-6"/><rect class="w" filter="url(#fsh)" x="124" y="24" width="86" height="28" rx="14"/><text class="tx" x="167" y="42" text-anchor="middle" style="font-size:10px">Français</text><rect class="w" filter="url(#fsh)" x="30" y="62" width="86" height="28" rx="14"/><text class="tx" x="73" y="80" text-anchor="middle" style="font-size:10px">Italiano</text><rect class="w" filter="url(#fsh)" x="124" y="62" width="86" height="28" rx="14"/><text class="tx" x="167" y="80" text-anchor="middle" style="font-size:10px">English</text><text class="txm" x="120" y="122" text-anchor="middle" style="font-size:9.5px">Grüezi · Bonjour · Ciao · Hello</text></svg></div><h3>Mehrsprachig</h3><p>Deutsch, Französisch, Italienisch, Englisch – die App passt sich dem Handy an.</p></article>
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><rect class="k" filter="url(#fsh)" x="24" y="12" width="192" height="100" rx="14"/><path class="vm1" d="M24 92l44-36 30 22 40-40 78 54v6a14 14 0 0 1-14 14H38a14 14 0 0 1-14-14z"/><circle class="w" cx="120" cy="56" r="18"/><path class="b" d="M115 47l14 9-14 9z"/><rect class="w3" x="38" y="98" width="164" height="4" rx="2"/><rect class="b2" x="38" y="98" width="62" height="4" rx="2"/><circle class="w" cx="100" cy="100" r="5"/><text class="tx" x="24" y="130" style="font-size:10px">Rücken-Workout</text><text class="txm" x="216" y="130" text-anchor="end" style="font-size:9.5px">12:40</text></svg></div><h3>Videos &amp; Podcast</h3><p>Workouts, Tutorials, Episoden – mit integriertem Player.</p></article>
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><text class="tx" x="30" y="28" style="font-size:11px">Nächster Vereinsanlass?</text><rect class="w" filter="url(#fsh)" x="30" y="40" width="180" height="24" rx="9"/><rect class="fb1" x="30" y="40" width="112" height="24" rx="9"/><text class="tx" x="42" y="56" style="font-size:9.5px">Grillabend</text><text class="txb" x="200" y="56" text-anchor="end" style="font-size:9.5px;font-weight:700">62 %</text><rect class="w" filter="url(#fsh)" x="30" y="70" width="180" height="24" rx="9"/><rect class="fb2" x="30" y="70" width="62" height="24" rx="9"/><text class="tx" x="42" y="86" style="font-size:9.5px">Ausflug</text><text class="txm" x="200" y="86" text-anchor="end" style="font-size:9.5px;font-weight:700">28 %</text><rect class="w" filter="url(#fsh)" x="30" y="100" width="180" height="24" rx="9"/><rect class="fb3" x="30" y="100" width="30" height="24" rx="9"/><text class="tx" x="42" y="116" style="font-size:9.5px">Turnier</text><text class="txm" x="200" y="116" text-anchor="end" style="font-size:9.5px;font-weight:700">10 %</text></svg></div><h3>Umfragen &amp; Social Wall</h3><p>Abstimmen, Fotos teilen, Community aufbauen – perfekt für Vereine und Gyms.</p></article>
+      <article class="fcard reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><rect class="w" filter="url(#fsh)" x="28" y="14" width="184" height="114" rx="14"/><rect class="gs" x="42" y="26" width="98" height="22" rx="11"/><circle class="g pulse" cx="55" cy="37" r="4"/><text class="txg" x="64" y="40.5" style="font-size:9.5px;font-weight:700">Jetzt geöffnet</text><circle class="g" cx="186" cy="37" r="13"/><path class="skw" d="M181 31c0 7 4 11 11 11l1-4-4-1.5-1.5 1.5a6 6 0 0 1-3-3l1.5-1.5L184 30z"/><text class="txm" x="42" y="72" style="font-size:9.5px">Mo – Fr</text><text class="tx" x="198" y="72" text-anchor="end" style="font-size:9.5px">8:00 – 18:30</text><rect class="l" x="42" y="78" width="156" height="1"/><text class="txm" x="42" y="92" style="font-size:9.5px">Samstag</text><text class="tx" x="198" y="92" text-anchor="end" style="font-size:9.5px">8:00 – 16:00</text><rect class="l" x="42" y="98" width="156" height="1"/><text class="txm" x="42" y="112" style="font-size:9.5px">Sonntag</text><text class="txm" x="198" y="112" text-anchor="end" style="font-size:9.5px">geschlossen</text></svg></div><h3>Öffnungszeiten live</h3><p>Zeigt in Echtzeit, ob Sie offen haben – mit Anruf-Button.</p></article>
+      <article class="fcard fcard--accent reveal"><div class="fart"><svg viewBox="0 0 240 140" aria-hidden="true"><rect class="aw1" x="40" y="18" width="70" height="50" rx="12"/><path class="skb" d="M60 36h30M60 46h18"/><rect class="aw2" x="118" y="18" width="70" height="50" rx="12"/><circle class="aw3" cx="153" cy="43" r="11"/><rect class="aw2" x="40" y="76" width="70" height="50" rx="12"/><path class="aw3" d="M58 112l12-16 10 12 6-6 8 10z"/><rect class="awd" x="118.75" y="76.75" width="68.5" height="48.5" rx="11.5"/><path class="skw" d="M153 92v18M144 101h18"/><path class="w spark" d="M206 14l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/></svg></div><h3>Und Ihr Wunsch?</h3><p>Fehlt etwas? Wir bauen Spezialfunktionen und Schnittstellen nach Mass.</p><a href="#kontakt" class="link">Anfragen <svg class="ic"><use href="#i-arrow"/></svg></a></article>
+    </div>
+    <div class="feat__nav" aria-hidden="true"><span class="feat__hint"><svg class="ic"><use href="#i-arrow"/></svg>Wischen für mehr</span><span class="feat__bar"><i data-feat-bar></i></span></div>
+  </div>
+</section>
+
+<!-- ============ BEISPIELE / BRANCHEN ============ -->
+<section class="sec sec--dark" id="branchen">
+  <div class="wrap">
+    <div class="sec__head sec__head--row">
+      <div>
+        <span class="eyebrow reveal">Beispiele</span>
+        <h2 class="reveal">Elf Vorlagen.<br><em>Jede mit eigenem Charakter.</em></h2>
+      </div>
+      <div class="gal__nav reveal">
+        <button class="round" data-gal="-1" aria-label="Zurück"><svg class="ic"><use href="#i-chev-l"/></svg></button>
+        <button class="round" data-gal="1" aria-label="Weiter"><svg class="ic"><use href="#i-chev-r"/></svg></button>
+      </div>
+    </div>
+    <div class="chips reveal" role="tablist" aria-label="Branche filtern">
+      <button class="fchip is-on" data-f="all">Alle</button>
+      <button class="fchip" data-f="gastro">Gastro</button>
+      <button class="fchip" data-f="beauty">Beauty</button>
+      <button class="fchip" data-f="sport">Sport</button>
+      <button class="fchip" data-f="hotel">Hotel</button>
+      <button class="fchip" data-f="shop">Shop</button>
+      <button class="fchip" data-f="community">Vereine &amp; Events</button>
+    </div>
+  </div>
+  <div class="gal" data-gallery tabindex="0" aria-label="App-Beispiele, horizontal scrollbar">
+    <figure class="gal__item" data-c="gastro"><img src="img/phones/restaurant.webp" alt="Restaurant-App Startseite" loading="lazy" width="640" height="1338"><figcaption><b>Restaurant</b>Startseite mit «jetzt geöffnet»</figcaption></figure>
+    <figure class="gal__item" data-c="gastro"><img src="img/phones/restaurant-menu.webp" alt="Restaurant-App Speisekarte" loading="lazy" width="640" height="1338"><figcaption><b>Restaurant</b>Speisekarte nach Kategorien</figcaption></figure>
+    <figure class="gal__item" data-c="gastro"><img src="img/phones/restaurant-book.webp" alt="Restaurant-App Tischreservation" loading="lazy" width="640" height="1338"><figcaption><b>Restaurant</b>Tischreservation</figcaption></figure>
+    <figure class="gal__item" data-c="beauty"><img src="img/phones/beauty.webp" alt="Coiffeur-App mit Stories" loading="lazy" width="640" height="1338"><figcaption><b>Coiffeur &amp; Beauty</b>Stories, Aktionen, Termin-Button</figcaption></figure>
+    <figure class="gal__item" data-c="beauty"><img src="img/phones/beauty-points.webp" alt="Digitale Stempelkarte" loading="lazy" width="640" height="1338"><figcaption><b>Coiffeur &amp; Beauty</b>Digitale Stempelkarte</figcaption></figure>
+    <figure class="gal__item" data-c="sport"><img src="img/phones/gym.webp" alt="Fitness-App" loading="lazy" width="640" height="1338"><figcaption><b>Fitness</b>Kurse, Challenges, Zahlen</figcaption></figure>
+    <figure class="gal__item" data-c="hotel"><img src="img/phones/hotel.webp" alt="Hotel-App" loading="lazy" width="640" height="1338"><figcaption><b>Hotel</b>Zimmer, Spa, lokaler Guide</figcaption></figure>
+    <figure class="gal__item" data-c="shop"><img src="img/phones/shop.webp" alt="Mode-Shop-App" loading="lazy" width="640" height="1338"><figcaption><b>Mode-Shop</b>Editorial-Look mit Warenkorb</figcaption></figure>
+    <figure class="gal__item" data-c="community"><img src="img/phones/event.webp" alt="Festival-App mit Countdown" loading="lazy" width="640" height="1338"><figcaption><b>Festival</b>Countdown und Line-up</figcaption></figure>
+    <figure class="gal__item" data-c="community"><img src="img/phones/club.webp" alt="Vereins-App" loading="lazy" width="640" height="1338"><figcaption><b>Verein</b>Agenda, News, Mitglied werden</figcaption></figure>
+    <figure class="gal__item" data-c="community"><img src="img/phones/academy.webp" alt="Akademie-App" loading="lazy" width="640" height="1338"><figcaption><b>Akademie</b>Kurse, Videos, Anmeldung</figcaption></figure>
+  </div>
+  <div class="wrap"><p class="note reveal">Alle Beispiele sind echte Vorschauen aus Forja – mit Beispielinhalten. Ihre App bekommt Ihre Texte, Fotos und Farben.</p></div>
+</section>
+
+<!-- ============ DEEP DIVES ============ -->
+<section class="sec" id="details">
+  <div class="wrap">
+    <div class="sec__head center">
+      <span class="eyebrow reveal">Ein Blick ins Programm</span>
+      <h2 class="reveal">Professionell gebaut.<br><em>Einfach zu verstehen.</em></h2>
+    </div>
+
+    <div class="dd">
+      <div class="dd__copy">
+        <span class="ibox ibox--lg reveal"><svg class="ic"><use href="#i-palette"/></svg></span>
+        <h3 class="reveal">Ihr Look, bis ins Detail</h3>
+        <p class="reveal">Themes, Farben, Schriften, Eckenradius, Logo in der Kopfzeile: Ihre App sieht aus wie Ihr Geschäft – nicht wie ein Baukasten. Jede Änderung erscheint sofort in der Vorschau.</p>
+        <ul class="ticks reveal"><li>12 Farbthemes oder Ihre eigenen CI-Farben</li><li>Hell- und Dunkelmodus</li><li>Über ein Dutzend professionelle Schriften</li></ul>
+      </div>
+      <figure class="dd__img reveal"><div class="browser"><div class="browser__bar"><i></i><i></i><i></i><span>Design</span></div><img src="img/screens/design.webp" alt="Design-Einstellungen in Forja" loading="lazy" width="1800" height="1125" data-lightbox></div></figure>
+    </div>
+
+    <div class="dd dd--rev">
+      <div class="dd__copy">
+        <span class="ibox ibox--lg reveal"><svg class="ic"><use href="#i-layers"/></svg></span>
+        <h3 class="reveal">Navigation wie bei den Grossen</h3>
+        <p class="reveal">Tab-Leiste wie bei Instagram, schwebende Glas-Leiste, Seitenmenü oder Raster: Ihre Kunden finden sich sofort zurecht. Native Gesten wie Zurückwischen und Ziehen-zum-Aktualisieren sind inklusive.</p>
+        <ul class="ticks reveal"><li>4 Menütypen, 4 Leistenstile</li><li>Hervorgehobener Haupt-Button, z. B. «Termin buchen»</li><li>Suche in der Kopfzeile</li></ul>
+      </div>
+      <figure class="dd__img reveal"><div class="browser"><div class="browser__bar"><i></i><i></i><i></i><span>Navigation</span></div><img src="img/screens/nav.webp" alt="Navigation in Forja wählen" loading="lazy" width="1800" height="1125" data-lightbox></div></figure>
+    </div>
+
+    <div class="dd">
+      <div class="dd__copy">
+        <span class="ibox ibox--lg reveal"><svg class="ic"><use href="#i-eye"/></svg></span>
+        <h3 class="reveal">Alles auf einen Blick: die Screen-Map</h3>
+        <p class="reveal">Welcher Button führt wohin? Welche Schritte hat die Buchung? Die Screen-Map zeigt jede Verbindung Ihrer App. So besprechen wir gemeinsam, ob alles logisch ist – bevor auch nur ein Kunde die App öffnet.</p>
+        <ul class="ticks reveal"><li>Alle Screens und Abläufe dokumentiert</li><li>Klare Grundlage für Erweiterungen</li></ul>
+      </div>
+      <figure class="dd__img reveal"><div class="browser"><div class="browser__bar"><i></i><i></i><i></i><span>Screen-Map</span></div><img src="img/screens/map.webp" alt="Screen-Map der Hotel-App in Forja" loading="lazy" width="1800" height="1125" data-lightbox></div></figure>
+    </div>
+
+    <div class="mini">
+      <figure class="mcard reveal">
+        <div class="mcard__img"><img src="img/screens/lang.webp" alt="Sprachen der App in Forja einstellen" loading="lazy" width="1800" height="1125" data-lightbox></div>
+        <figcaption><h3><svg class="ic"><use href="#i-globe"/></svg>Mehrsprachig für die ganze Schweiz</h3><p>Deutsch, Französisch, Italienisch und Englisch. Die App erkennt die Sprache des Handys automatisch.</p></figcaption>
+      </figure>
+      <figure class="mcard reveal">
+        <div class="mcard__img"><img src="img/screens/users.webp" alt="Benutzerkonten in Forja aktivieren" loading="lazy" width="1800" height="1125" data-lightbox></div>
+        <figcaption><h3><svg class="ic"><use href="#i-users"/></svg>Kundenkonten &amp; Mitgliederbereiche</h3><p>Login per E-Mail, Apple oder Google. Ideal für Vereine, Gyms und Akademien mit exklusiven Inhalten.</p></figcaption>
+      </figure>
+      <figure class="mcard reveal">
+        <div class="mcard__img"><img src="img/screens/dashboard.webp" alt="Übersicht aller Apps in Forja" loading="lazy" width="1800" height="1125" data-lightbox></div>
+        <figcaption><h3><svg class="ic"><use href="#i-phone"/></svg>iPhone und Android</h3><p>Eine Planung, zwei Plattformen: Wir liefern native Apps für den App Store und Google Play.</p></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCHWEIZ ============ -->
+<section class="swiss" aria-labelledby="swiss-h">
+  <img class="swiss__bg" src="img/photos/matterhorn.webp" alt="" loading="lazy" width="1600" height="1067">
+  <div class="wrap swiss__in">
+    <div class="swiss__copy">
+      <span class="eyebrow eyebrow--light reveal"><svg class="ic"><use href="#i-swiss"/></svg>Aus der Region, für die Region</span>
+      <h2 id="swiss-h" class="reveal">Persönlich statt<br><em>Callcenter.</em></h2>
+      <p class="reveal">Lweb sitzt in Sevelen SG. Wir kommen bei Ihnen vorbei, sprechen Ihre Sprache und sind auch nach dem Launch erreichbar – von Werdenberg über St. Gallen und das Rheintal bis nach Liechtenstein.</p>
+    </div>
+    <div class="swiss__stats">
+      <div class="stat reveal"><b data-count="11">11</b><span>Branchen-Vorlagen</span></div>
+      <div class="stat reveal"><b data-count="23" data-suffix="+">23+</b><span>Bausteine &amp; Funktionen</span></div>
+      <div class="stat reveal"><b data-count="4">4</b><span>Sprachen: DE · FR · IT · EN</span></div>
+      <div class="stat reveal"><b data-count="2">2</b><span>Plattformen: iOS &amp; Android</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJEKTABLAUF ============ -->
+<section class="sec" id="projekt">
+  <div class="wrap">
+    <div class="sec__head center">
+      <span class="eyebrow reveal">Ihr Projekt</span>
+      <h2 class="reveal">In vier Etappen<br><em>in den App Store.</em></h2>
+    </div>
+    <ol class="tl">
+      <li class="tl__item reveal">
+        <span class="tl__n">1</span>
+        <h3>Kennenlernen</h3>
+        <p>Kostenloses Gespräch vor Ort oder per Video. Wir zeigen Ihnen Forja und klären, was Ihre App können soll.</p>
+        <span class="tl__tag">Gratis</span>
+      </li>
+      <li class="tl__item reveal">
+        <span class="tl__n">2</span>
+        <h3>Prototyp</h3>
+        <p>Wir bauen die erste Version. Sie scannen einen QR-Code und testen sie auf Ihrem eigenen Handy.</p>
+        <span class="tl__tag">Live-Vorschau</span>
+      </li>
+      <li class="tl__item reveal">
+        <span class="tl__n">3</span>
+        <h3>Feinschliff</h3>
+        <p>Texte, Fotos, Farben, Abläufe: Wir passen an, bis alles stimmt. Ohne versteckte Zusatzkosten.</p>
+        <span class="tl__tag">Fixpreis</span>
+      </li>
+      <li class="tl__item reveal">
+        <span class="tl__n">4</span>
+        <h3>Launch</h3>
+        <p>Wir erstellen die native App, reichen sie im App Store und bei Google Play ein und begleiten die Freigabe.</p>
+        <span class="tl__tag">iOS &amp; Android</span>
+      </li>
+    </ol>
+    <div class="duo">
+      <figure class="duo__a reveal"><img src="img/photos/workshop.webp" alt="Gemeinsamer Workshop am Laptop" loading="lazy" width="1600" height="1067"><figcaption>Gemeinsam planen</figcaption></figure>
+      <figure class="duo__b reveal"><img src="img/photos/handy-app.webp" alt="App auf dem Smartphone testen" loading="lazy" width="1600" height="1067"><figcaption>Auf dem eigenen Handy testen</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREISE ============ -->
+<section class="sec sec--tint" id="preise">
+  <div class="wrap">
+    <div class="sec__head center">
+      <span class="eyebrow reveal">Preise</span>
+      <h2 class="reveal">Fixpreise in CHF.<br><em>Keine bösen Überraschungen.</em></h2>
+      <p class="reveal">Alle Pakete inklusive Design, Inhalte-Einpflege, iPhone- und Android-App sowie Store-Einreichung.</p>
+    </div>
+    <div class="prices">
+      <article class="price reveal">
+        <h3>Start</h3>
+        <p class="price__for">Für Cafés, Coiffeure, kleine Läden</p>
+        <div class="price__amt"><small>ab CHF</small><b>2’900</b></div>
+        <ul class="ticks">
+          <li>Bis 5 Bereiche</li><li>Vorlage in Ihrem Design</li><li>Speisekarte / Katalog, Kontakt, Galerie</li><li>«Jetzt geöffnet» &amp; Karte</li><li>1 Sprache</li><li>iPhone &amp; Android</li>
+        </ul>
+        <a href="#kontakt" class="btn btn--ghost btn--block" data-plan="Start">Paket anfragen</a>
+      </article>
+      <article class="price price--pop reveal">
+        <span class="price__badge">Beliebt</span>
+        <h3>Business</h3>
+        <p class="price__for">Für Restaurants, Studios, Hotels</p>
+        <div class="price__amt"><small>ab CHF</small><b>4’900</b></div>
+        <ul class="ticks">
+          <li>Bis 12 Bereiche</li><li>Termine, Tischreservation oder Shop</li><li>Digitale Treuekarte &amp; QR-Gutscheine</li><li>Push-Nachrichten</li><li>2 Sprachen</li><li>iPhone &amp; Android</li>
+        </ul>
+        <a href="#kontakt" class="btn btn--primary btn--block" data-plan="Business">Paket anfragen</a>
+      </article>
+      <article class="price reveal">
+        <h3>Individuell</h3>
+        <p class="price__for">Für Vereine, Ketten, Spezialwünsche</p>
+        <div class="price__amt"><small>ab CHF</small><b>8’900</b></div>
+        <ul class="ticks">
+          <li>Unbegrenzte Bereiche</li><li>Kundenkonten &amp; Mitgliederbereiche</li><li>Lieferservice, Chat, Social Wall</li><li>Schnittstellen zu Ihren Systemen</li><li>Bis 4 Sprachen</li><li>Individuelle Funktionen</li>
+        </ul>
+        <a href="#kontakt" class="btn btn--ghost btn--block" data-plan="Individuell">Offerte anfragen</a>
+      </article>
+    </div>
+    <div class="care reveal">
+      <span class="ibox"><svg class="ic"><use href="#i-handshake"/></svg></span>
+      <div><h3>Betreuung ab CHF 49 / Monat</h3><p>Hosting, Updates für neue iOS- und Android-Versionen, Inhaltsänderungen und persönlicher Support. Monatlich kündbar.</p></div>
+      <a href="#kontakt" class="btn btn--ghost">Mehr erfahren</a>
+    </div>
+    <p class="note center reveal">Alle Preise exkl. MWST. Gebühren von Apple (99 USD/Jahr) und Google (einmalig 25 USD) werden direkt über Ihr Entwicklerkonto bezahlt.</p>
+
+    <div class="cmp reveal">
+      <h3 class="cmp__h">Lweb im Vergleich</h3>
+      <div class="cmp__scroll">
+        <table>
+          <thead><tr><th></th><th class="is-us">Lweb + Forja</th><th>Agentur</th><th>Selbst-Baukasten</th></tr></thead>
+          <tbody>
+            <tr><td>Preis für eine Business-App</td><td class="is-us"><b>ab CHF 4’900</b></td><td>CHF 20’000–60’000</td><td>Abo, oft in USD</td></tr>
+            <tr><td>Native App für iPhone &amp; Android</td><td class="is-us"><svg class="ic ok"><use href="#i-check"/></svg></td><td><svg class="ic ok"><use href="#i-check"/></svg></td><td>teilweise</td></tr>
+            <tr><td>Live-Vorschau auf Ihrem Handy</td><td class="is-us"><svg class="ic ok"><use href="#i-check"/></svg></td><td>selten</td><td><svg class="ic ok"><use href="#i-check"/></svg></td></tr>
+            <tr><td>Sie müssen selber bauen</td><td class="is-us"><svg class="ic no"><use href="#i-x"/></svg><span class="sr">Nein</span></td><td><svg class="ic no"><use href="#i-x"/></svg><span class="sr">Nein</span></td><td>Ja</td></tr>
+            <tr><td>Persönlicher Kontakt in der Region</td><td class="is-us"><svg class="ic ok"><use href="#i-check"/></svg></td><td>je nach Agentur</td><td><svg class="ic no"><use href="#i-x"/></svg><span class="sr">Nein</span></td></tr>
+            <tr><td>Fixpreis</td><td class="is-us"><svg class="ic ok"><use href="#i-check"/></svg></td><td>meist Stundenbasis</td><td><svg class="ic ok"><use href="#i-check"/></svg></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec" id="faq">
+  <div class="wrap faq">
+    <div class="faq__head">
+      <span class="eyebrow reveal">FAQ</span>
+      <h2 class="reveal">Häufige<br><em>Fragen.</em></h2>
+      <p class="reveal">Ihre Frage ist nicht dabei? Rufen Sie uns an: <a href="tel:+41793749032">079 374 90 32</a></p>
+    </div>
+    <div class="faq__list">
+      <details class="qa reveal"><summary>Ist das eine «echte» App oder nur eine Website?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Eine echte, native App für iPhone und Android, die im App Store und bei Google Play erscheint. In Forja planen und gestalten wir sie gemeinsam – daraus entsteht die native App.</p></details>
+      <details class="qa reveal"><summary>Wie lange dauert es bis zur fertigen App?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Einen ersten Prototyp zum Testen auf Ihrem Handy haben Sie meist innerhalb weniger Tage. Bis zur Veröffentlichung in den Stores rechnen Sie je nach Umfang mit zwei bis sechs Wochen – inklusive Prüfung durch Apple und Google.</p></details>
+      <details class="qa reveal"><summary>Muss ich technisch etwas können?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Nein. Wir bauen die App für Sie. Sie liefern Texte, Fotos und Wünsche – oder wir helfen auch dabei. Testen können Sie jederzeit per QR-Code auf Ihrem Handy.</p></details>
+      <details class="qa reveal"><summary>Kann ich Inhalte später selbst ändern?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Ja. Mit dem Betreuungsabo übernehmen wir Änderungen für Sie. Auf Wunsch zeigen wir Ihnen auch, wie Sie Preise, Angebote oder Öffnungszeiten selbst anpassen.</p></details>
+      <details class="qa reveal"><summary>Was kostet der Betrieb nach dem Launch?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Apple verlangt 99 USD pro Jahr, Google einmalig 25 USD. Unser Betreuungsabo mit Hosting, Updates und Support startet bei CHF 49 pro Monat und ist monatlich kündbar.</p></details>
+      <details class="qa reveal"><summary>Gehört die App mir?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Ja. Die App erscheint unter Ihrem Namen und in Ihrem Entwicklerkonto bei Apple und Google. Ihre Inhalte und Kundendaten gehören Ihnen.</p></details>
+      <details class="qa reveal"><summary>Brauche ich zusätzlich eine Website?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Für die App nicht. Viele Kunden kombinieren aber beides – Lweb baut auch Websites. Fragen Sie nach einem Kombi-Angebot.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section class="sec sec--tint" id="kontakt">
+  <div class="wrap contact">
+    <div class="contact__copy">
+      <span class="eyebrow reveal">Kontakt</span>
+      <h2 class="reveal">Sehen Sie Ihre App,<br><em>bevor Sie zahlen.</em></h2>
+      <p class="reveal">In einer kostenlosen Demo zeigen wir Ihnen Forja und bauen live einen ersten Entwurf für Ihr Geschäft. Unverbindlich, ca. 30 Minuten.</p>
+      <div class="ccard reveal">
+        <div class="ccard__row"><span class="ibox"><svg class="ic"><use href="#i-call"/></svg></span><div><small>Telefon &amp; WhatsApp</small><a href="tel:+41793749032">079 374 90 32</a></div></div>
+        <div class="ccard__row"><span class="ibox"><svg class="ic"><use href="#i-mail"/></svg></span><div><small>E-Mail</small><a href="mailto:info@lweb.ch">info@lweb.ch</a></div></div>
+        <div class="ccard__row"><span class="ibox"><svg class="ic"><use href="#i-pin"/></svg></span><div><small>Standort</small><span>9475 Sevelen SG</span></div></div>
+      </div>
+    </div>
+    <form class="form reveal" id="form" novalidate>
+      <h3>Gratis-Demo anfragen</h3>
+      <div class="form__row">
+        <label>Name<input name="name" required autocomplete="name" placeholder="Vor- und Nachname"></label>
+        <label>Firma<input name="firma" autocomplete="organization" placeholder="Ihr Geschäft"></label>
+      </div>
+      <div class="form__row">
+        <label>E-Mail<input name="email" type="email" required autocomplete="email" placeholder="name@firma.ch"></label>
+        <label>Telefon<input name="tel" type="tel" autocomplete="tel" placeholder="079 …"></label>
+      </div>
+      <fieldset class="form__seg">
+        <legend>Branche</legend>
+        <div class="seg">
+          <label><input type="radio" name="branche" value="Gastro" checked><span>Gastro</span></label>
+          <label><input type="radio" name="branche" value="Beauty"><span>Beauty</span></label>
+          <label><input type="radio" name="branche" value="Sport"><span>Sport</span></label>
+          <label><input type="radio" name="branche" value="Hotel"><span>Hotel</span></label>
+          <label><input type="radio" name="branche" value="Shop"><span>Shop</span></label>
+          <label><input type="radio" name="branche" value="Andere"><span>Andere</span></label>
+        </div>
+      </fieldset>
+      <label>Paket<select name="paket"><option>Noch offen</option><option>Start</option><option>Business</option><option>Individuell</option></select></label>
+      <label>Was soll Ihre App können?<textarea name="msg" rows="4" placeholder="z. B. Termine buchen, Treuekarte, Push-Nachrichten …"></textarea></label>
+      <button class="btn btn--primary btn--lg btn--block" type="submit">Anfrage senden <svg class="ic"><use href="#i-arrow"/></svg></button>
+      <p class="form__hint">Ihre Angaben werden nur für Ihre Anfrage verwendet.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr__in">
+    <div>
+      <a href="#top" class="brand brand--light"><span class="brand__word">Lweb</span><svg class="brand__cross"><use href="#i-swiss"/></svg><span class="brand__tag">Apps</span></a>
+      <p>Apps und Websites für KMU in der Schweiz und in Liechtenstein.<br>9475 Sevelen SG</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#ablauf">So funktioniert’s</a><a href="#funktionen">Funktionen</a><a href="#branchen">Beispiele</a><a href="#preise">Preise</a><a href="#faq">FAQ</a><a href="https://lweb.ch">lweb.ch</a>
+    </nav>
+    <p class="ftr__small">© <span data-year>2026</span> Lweb · Fotos: Unsplash · App-Bilder: Forja mit Beispielinhalten</p>
+  </div>
+</footer>
+
+<!-- Mobile CTA -->
+<a href="#kontakt" class="mcta">Gratis-Demo vereinbaren <svg class="ic"><use href="#i-arrow"/></svg></a>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Bildansicht">
+  <button class="lb__x round" aria-label="Schliessen"><svg class="ic"><use href="#i-x"/></svg></button>
+  <img alt="">
+</div>
+
+<!-- Modal Bestätigung -->
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-h">
+  <div class="modal__card">
+    <span class="modal__ok"><svg class="ic"><use href="#i-check"/></svg></span>
+    <h3 id="modal-h">Fast geschafft!</h3>
+    <p>Ihr E-Mail-Programm öffnet sich mit Ihrer Anfrage. Bitte nur noch auf «Senden» tippen – wir melden uns innert 24 Stunden.</p>
+    <p class="modal__alt">Kein E-Mail-Programm? Schreiben Sie direkt an <a href="mailto:info@lweb.ch">info@lweb.ch</a> oder rufen Sie an: <a href="tel:+41793749032">079 374 90 32</a>.</p>
+    <button class="btn btn--primary btn--block" data-close>Alles klar</button>
+  </div>
+</div>
+
+<script src="js/main.js?v=202611021" defer></script>
+</body>
+</html>
