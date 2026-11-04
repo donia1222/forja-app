@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=202611041">
+<link rel="stylesheet" href="css/style.css?v=202611042">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Lweb","url":"https://lweb.ch","email":"info@lweb.ch","telephone":"+41793749032","address":{"@type":"PostalAddress","postalCode":"9475","addressLocality":"Sevelen","addressCountry":"CH"},"areaServed":["CH","LI"],"description":"Native Apps für iPhone und Android für KMU in der Schweiz und in Liechtenstein."}
 </script>
@@ -533,6 +533,22 @@
   <img alt="">
 </div>
 
+<!-- Modal «Bald verfügbar» (erster Besuch) -->
+<div class="modal modal--soon" id="soon" hidden role="dialog" aria-modal="true" aria-labelledby="soon-h">
+  <div class="modal__card">
+    <button class="modal__x round" data-close aria-label="Schliessen"><svg class="ic"><use href="#i-x"/></svg></button>
+    <img class="modal__logo" src="img/brand/forja-icon.png" alt="" width="180" height="180">
+    <span class="modal__tag"><span class="dot"></span>In Entwicklung</span>
+    <h3 id="soon-h">Forja kommt bald.</h3>
+    <p>Wir legen gerade letzte Hand an den Forja App Creator. Schon bald können Sie Ihre eigene App selbst gestalten und mit einem Klick an uns senden.</p>
+    <p class="modal__alt">Möchten Sie zu den Ersten gehören? Hinterlassen Sie uns Ihre Kontaktdaten – wir melden uns, sobald Forja bereit ist.</p>
+    <div class="modal__btns">
+      <a href="#kontakt" class="btn btn--primary btn--block" data-close>Benachrichtigen Sie mich</a>
+      <button class="btn btn--ghost btn--block" data-close>Seite ansehen</button>
+    </div>
+  </div>
+</div>
+
 <!-- Modal Bestätigung -->
 <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-h">
   <div class="modal__card">
@@ -544,6 +560,6 @@
   </div>
 </div>
 
-<script src="js/main.js?v=202611041" defer></script>
+<script src="js/main.js?v=202611042" defer></script>
 </body>
 </html>

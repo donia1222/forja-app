@@ -214,8 +214,24 @@
     if (d > 90) closeModal();
   });
 
+  /* ---------- «Bald verfügbar»: nur beim ersten Besuch ---------- */
+  const soon = $('#soon');
+  const SOON_KEY = 'forja-bald-gesehen';
+  const closeSoon = () => {
+    soon.classList.remove('is-open');
+    setTimeout(() => { soon.hidden = true; }, 300);
+    try { localStorage.setItem(SOON_KEY, '1'); } catch {}
+  };
+  if (soon) {
+    soon.addEventListener('click', (e) => { if (e.target === soon || e.target.closest('[data-close]')) closeSoon(); });
+    let seen = false;
+    try { seen = localStorage.getItem(SOON_KEY) === '1'; } catch {}
+    if (!seen) setTimeout(() => { soon.hidden = false; requestAnimationFrame(() => soon.classList.add('is-open')); }, 700);
+  }
+
   addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
+    if (soon && !soon.hidden) closeSoon();
     if (!lb.hidden) closeLB();
     if (!modal.hidden) closeModal();
     if (!mnav.hidden) setMenu(false);
