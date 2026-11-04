@@ -101,6 +101,9 @@ p { margin: 0; }
 .hdr.is-scrolled { border-color: var(--line); box-shadow: 0 6px 24px -18px rgba(14,13,28,.3); }
 .hdr__in { display: flex; align-items: center; gap: 24px; height: 72px; }
 .brand { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
+.brand__logo { display: block; height: 52px; width: auto; }
+.ftr .brand__logo { height: 52px; }
+@media (max-width: 640px) { .brand__logo { height: 44px; } }
 .brand__word { font: 800 25px/1 var(--f-head); letter-spacing: -.04em; color: #14254a; }
 .brand__cross { width: 22px; height: 22px; transform: translateY(-1px); }
 .brand__tag {
@@ -601,6 +604,10 @@ p { margin: 0; }
   .form__row { grid-template-columns: 1fr; }
   .cmp { padding: 18px 0 8px; }
   .cmp__h { padding: 0 18px; }
+  /* capturas del programa: en el móvil, versión cuadrada con el panel y la vista previa legibles */
+  .steps__imgs { aspect-ratio: 1 / 1; }
+  .mcard__img { aspect-ratio: 1 / 1; }
+  .mcard__img img { width: 100%; }
   .mcta {
     display: flex; align-items: center; justify-content: center; gap: 8px; position: fixed; left: 16px; right: 16px; bottom: 14px; z-index: 40;
     height: 52px; border-radius: 999px; background: linear-gradient(180deg, var(--brand-2), var(--brand)); color: #fff; font-weight: 600; text-decoration: none;
